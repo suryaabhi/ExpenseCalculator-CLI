@@ -1,0 +1,31 @@
+Expense sharing app
+
+Let's say 3 people live together in a room. One Person pays the room rent of Rs.300, on behalf of his roommates. So, everyone else living in the room owes that person Rs.100. This is the basic idea of expense sharing.
+
+The aim is to develop a console application that manages expenses between 'n' people.
+The program should begin by taking number of members and their names.
+After that, a Main Menu should be displayed with options as follows:
+Add an Expense
+Show Expense
+Exit Program
+When user selects Option 1, System should ask for an input - Who paid the expense and how much did they pay. Once the user gives the input, system must display the Main Menu again.
+
+When user Selects Option 2, the money owed by each person to every other person should be displayed as the ouput. Refer to the example below -
+
+(Given B spends 300 rupees for expense. A need to pay 100 rupees to B and C need to pay 100 rupees to B)
+
+                        A    B    C
+                   A    0   100   0
+                   B    0    0    0 
+                   C    0   100   0
+                
+Further to the above expenses, if a user adds additional expenses, system should display update table as shown below.
+
+(Given C spends 600 rupees for expense. A need to pay 200 rupees to C and B needs to pay 100 rupees to C, as C already owes B 100 Rupees, B needs to pay only 100 rupees to C(200-100 = 100))
+
+                        A    B    C
+                   A    0   100  200
+                   B    0    0   100 
+                   C    0    0    0
+                
+Note: Please follow good coding standards and write the code in way that it is extensible. We shall give extensions to the requirement to check your code extensibility.
